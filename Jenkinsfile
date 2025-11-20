@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'scp target/demoJenkins-0.0.1-SNAPSHOT.war user@http://localhost:8080/webapps/
+                bat 'scp target/demoJenkins-0.0.1-SNAPSHOT.war user@http://localhost:8080:/webapps/
 '
             }
         }
